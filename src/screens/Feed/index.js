@@ -3,12 +3,12 @@ import {
   FlatList, 
   Image, 
   View, 
-  StyleSheet, 
   Text, 
-  TouchableOpacity
+  TouchableOpacity,
+  StyleSheet
 } from 'react-native';
 
-import  options from '../../../assets/options.png';
+import options from '../../../assets/options.png';
 import like from '../../../assets/like.png';
 import comment from '../../../assets/comment.png';
 import send from '../../../assets/send.png';
@@ -58,7 +58,7 @@ function Feed() {
     }        
   ];
 
-  function renderItem({ item: post}) {
+  function renderItem({item: post}) {
     return (
       <View style={styles.post}>
         <View style={styles.postHeader}>
@@ -77,7 +77,7 @@ function Feed() {
         <View>
             <Image 
               style={styles.picture_url} 
-              source={{ uri: post.picture_url}}
+              source={{ uri: post.picture_url }}
             />
         </View>
 
